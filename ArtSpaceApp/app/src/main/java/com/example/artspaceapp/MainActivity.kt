@@ -69,13 +69,13 @@ fun GalleryApp(name: String, modifier: Modifier = Modifier) {
     val (imageRes, subjectNameRes, photographerRes) = when (currentPage) {
         1 -> Triple(
             R.drawable.zhu_hongzhi_afijece9jt0_unsplash,
-            R.string.super_tree,
+            R.string.monday_blues,
             R.string.zhu_hongzhi
         )
 
         2 -> Triple(
             R.drawable.coleen_rivas_oz2rs2zcjno_unsplash,
-            R.string.monday_blues,
+            R.string.super_tree,
             R.string.hu_chen
         )
         else -> Triple(
