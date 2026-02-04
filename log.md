@@ -130,24 +130,28 @@
 * **Goal Alignment:** Building scalable, testable UI patterns used in Singapore’s top-tier engineering teams.
 
 
-## [2026-02-04] Day 7: Building Scrollable Grids
+## [2026-02-04] Day 7: Building Scrollable Grids & Kotlin Deep Dive
 
 **Pathway:** Android Basics in Compose - Unit 3, Pathway 2
 **Codelab:** [Practice: Build a Grid](https://developer.android.com/codelabs/basic-android-kotlin-compose-practice-grid)
+**Kotlin Resource:** [Abstract and Open Classes](https://typealias.com/start/kotlin-abstract-and-open-classes/)
 
 ### 🛠️ Technical Implementation
 * **Lazy Layouts:** Mastered both `LazyColumn` (for the Affirmations app) and `LazyVerticalGrid` (for the Courses app).
 * **Data Class Construction:** Defined a `Topic` data class to handle multi-type data (String Resource ID, Int for course count, and Drawable Resource ID).
 * **LazyVerticalGrid:** Implemented a responsive grid using `GridCells.Fixed(2)` to display content in a dual-column format.
-* **Composable Composition:** * Used `Card` as a container for elevation and shaping.
-    * Combined `Row` and `Column` to align the topic image with its metadata.
-* **Resource Management:** Integrated string and drawable resources via `painterResource` and `stringResource`.
+* **Composable Composition:** Combined `Card`, `Row`, and `Column` to align the topic image with its metadata.
+* **Abstract & Open Classes:**
+    * Used `abstract` for base classes that shouldn't be instantiated.
+    * Used `open` to allow inheritance and overriding (since Kotlin classes are `final` by default).
+    * Applied `protected` visibility to allow subclasses to modify internal state (e.g., `batteryLevel`) while keeping it encapsulated.
 
 ### 🧠 Key Takeaways
 * **UI Specs:** Learned to translate specific design requirements (DP spacing, typography styles) into Compose Modifiers.
 * **Iteration:** Practiced the workflow of building a single item component first, then populating it into a lazy layout.
+* **Inheritance Logic:** Understood that abstract classes can hold state (`var`/`val`), which distinguishes them from Interfaces in Kotlin.
 
 ### 📈 Progress Tracking
-* **Time Invested:** 4 hours
+* **Time Invested:** 5 hours
 * **Phase:** 1 (Kotlin Fundamentals & Android Basics)
-* **Goal Alignment:** Strengthening UI layout fundamentals required for Junior/Intern roles in Singapore.
+* **Goal Alignment:** Strengthening UI layout fundamentals and OO principles required for Junior/Intern roles in Singapore.
