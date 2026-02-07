@@ -104,6 +104,8 @@
 * **Phase:** 1 (Architecture Foundations)
 * **Goal Alignment:** Deepening knowledge of state—the most critical part of complex apps like Google Wallet.
 
+---
+
 ## [2026-02-03] Day 6: Data Modeling & Reactive State Management
 
 **Pathway:** Android Basics in Compose - Unit 2, Pathway 3 (Extended)
@@ -127,8 +129,9 @@
 ### 📈 Progress Tracking
 * **Time Invested:** 2 hours
 * **Phase:** 1 (Architecture Foundations)
-* **Goal Alignment:** Building scalable, testable UI patterns used in Singapore’s top-tier engineering teams.
+* **Goal Alignment:** Building testable patterns
 
+---
 
 ## [2026-02-04] Day 7: Building Scrollable Grids & Kotlin Deep Dive
 
@@ -154,7 +157,9 @@
 ### 📈 Progress Tracking
 * **Time Invested:** 5 hours
 * **Phase:** 1 (Kotlin Fundamentals & Android Basics)
-* **Goal Alignment:** Strengthening UI layout fundamentals and OO principles required for Junior/Intern roles in Singapore.
+* **Goal Alignment:** Strengthening UI layout fundamentals.
+
+---
 
 ## [2026-02-05] Day 8: Material Theming & Data Structures
 
@@ -179,3 +184,55 @@
 * **Time Invested:** 6 hours
 * **Phase:** 1 (Kotlin Fundamentals & Android Basics)
 * **Goal Alignment:** Learaning Material 3 and clean data modeling.
+
+---
+
+## [2026-02-06] Day 9: State Management & Collection Manipulation
+
+**Pathway:** Android Basics in Compose - Unit 3 (Custom Projects)
+**Projects:** Lion City Wallet & Makan Splitter
+**Kotlin Resource:** [List Transformations and Copying](https://kotlinlang.org/docs/data-classes.html#copying)
+
+### 🛠️ Technical Implementation
+* **State Hoisting & Callbacks:** Implemented state hoisting in "Makan Splitter" by moving `orderList` to the top-level Composable and passing lambda functions (`onIncrement`, `onDecrement`) down to child components.
+* **Immutable State Updates:** Mastered the pattern of updating lists in Compose using `.map { ... }` combined with the `.copy()` function to create new object instances, ensuring the UI recomposes correctly.
+* **Filtering Logic:** Built a dynamic filtering system for "Lion City Wallet" where selecting a card type updates the `LazyColumn` to show only relevant transactions or returns to a full list view.
+* **Destructuring in Loops:** Utilized destructuring declarations within `items` blocks (e.g., `val (merchant, amount, category, card) = transaction`) to keep Composable code clean and readable.
+* **Material 3 Navigation & Layouts:**
+    * Implemented `CenterAlignedTopAppBar` with custom typography.
+    * Used `Scaffold` to manage inner padding and layout structure.
+    * Leveraged `LazyRow` for a horizontal card selector and `LazyColumn` for vertical lists.
+
+### 🧠 Key Takeaways
+* **Unidirectional Data Flow:** Reinforced the concept that state flows down (to cards) and events flow up (to the main app state), a critical architecture requirement for high-level software engineering roles.
+* **Recomposition Triggers:** Learned that Compose tracks state by object identity; updating a property inside a list item requires a new list reference for the UI to "see" the change.
+* **UI Flexibility:** Practiced using `Arrangement.SpaceBetween` and `fillMaxWidth()` to create professional-looking, responsive list items that mimic real-world financial apps.
+
+### 📈 Progress Tracking
+* **Time Invested:** 4 hours
+* **Phase:** 1 (Kotlin Fundamentals & Android Basics)
+* **Goal Alignment:** Practicing mini projects (Wallet/Splitter) to sharpen my jetpack compose skills.
+
+---
+
+## [2026-02-07] Day 10: Lifecycle, Sealed Classes & Feature Completion
+
+**Pathway:** Android Basics in Compose - Unit 3 (Custom Projects)
+**Projects:** Makan Splitter (Feature Complete)
+**Kotlin Resource:** [Sealed Types - Typealias](https://typealias.com/start/kotlin-sealed-types/)
+
+### 🛠️ Technical Implementation
+* **State Management:** Finalized `orderList` logic in "Makan Splitter". Implemented `incrementQuantity` and `decrementQuantity` using `.map { ... .copy() }` to trigger UI recomposition through object identity changes.
+* **Derived State & Logic:** Built a `BottomSummary` component that dynamically calculates subtotal, GST (9%), and total price using functional transformations (`filter` and `sumOf`).
+* **Extension Functions:** Created a local `roundUp()` extension function for `Double` to handle currency formatting within the summary view.
+* **Layout Orchestration:** Used `Scaffold` with a `weight(1f)` modifier on the `LazyColumn` to ensure the summary box stays pinned to the bottom while the list remains scrollable.
+
+### 🧠 Key Takeaways
+* **Sealed Classes/Interfaces:** Learned that sealed types represent restricted class hierarchies. Unlike Enums, subclasses can hold unique state, making them perfect for representing UI states like `Success(data)` or `Error(message)`.
+* **Activity Lifecycle:** Studied the sequence of `onCreate`, `onStart`, `onResume`, `onPause`, `onStop`, and `onDestroy`. Essential for understanding how the OS handles process death and configuration changes.
+* **UI Flexibility:** Mastered the use of `Shape` and `Background` modifiers to create a "Bottom Sheet" feel for the summary section, aligning with modern Fintech UI patterns.
+
+### 📈 Progress Tracking
+* **Time Invested:** 4 hours
+* **Phase:** 1 (Kotlin Fundamentals & Android Basics)
+* **Goal Alignment:** Completed "Makan Splitter" logic; solidified UDF
