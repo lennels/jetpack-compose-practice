@@ -235,4 +235,31 @@
 ### 📈 Progress Tracking
 * **Time Invested:** 4 hours
 * **Phase:** 1 (Kotlin Fundamentals & Android Basics)
-* **Goal Alignment:** Completed "Makan Splitter" logic; solidified UDF
+* **Goal Alignment:** Completed "Makan Splitter" logic; solidified UDF within the screen
+
+---
+
+## [2026-02-08] Day 11: ViewModels, StateFlow & Unit Testing
+
+**Pathway:** Android Basics in Compose - Unit 4 (Architecture & Testing)
+**Kotlin Resource:** [JUnit 4 Documentation](https://junit.org/junit4/) / [Android ViewModel Guide](https://developer.android.com/topic/libraries/architecture/viewmodel)
+
+### 🛠️ Technical Implementation
+* **ViewModel Implementation:** Explored the ViewModel as the "brain" of the app. Shifted logic away from the UI layer to handle business rules (e.g., score calculation and word validation).
+* **UiState Observation:** Leveraged `StateFlow` to expose a single source of truth. The UI now acts as a passive observer of the state snapshot.
+* **Unit Testing (JUnit 4):** Wrote a test suite for `GameViewModel`. 
+    * Used `assertFalse` to verify error flag resets and `assertEquals` to validate scoring logic.
+* **State Verification:** Focused on testing the "Happy Path"—ensuring that a correct user guess properly updates the score and transitions the state correctly.
+
+### 🧠 Key Takeaways
+* **Source of Truth:** The ViewModel survives configuration changes (like rotation) and holds the app logic, while the `UiState` describes exactly what the user sees at any given moment.
+* **Testable Architecture:** Separation of concerns (Logic vs. UI) is what makes Unit Testing possible. Testing the "brain" without the "face" (UI) makes for faster, more reliable builds.
+* **Naming Conventions:** Adopted the `unit_condition_expectedResult` naming pattern for test functions to ensure clarity in test reports.
+
+### 📈 Progress Tracking
+* **Time Invested:** 3 hours
+* **Phase:** 1 (Kotlin Fundamentals & Android Basics)
+* **Goal Alignment:** Grasping the concept of ViewModels; Starting to practice how ViewModels work.
+
+### 🎯 Objective for Tomorrow
+* Focus on how ViewModels work and implement them in 2 practice apps to solidify the implementation pattern.
