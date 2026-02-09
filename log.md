@@ -263,3 +263,28 @@
 
 ### 🎯 Objective for Tomorrow
 * Focus on how ViewModels work and implement them in 2 practice apps to solidify the implementation pattern.
+
+---
+
+## [2026-02-09] Day 12: Advanced State Logic & Logic-Driven ViewModels
+
+**Pathway:** Android Basics in Compose - Unit 4 (Architecture & Testing)
+**Kotlin Resource:** [State in Jetpack Compose](https://developer.android.com/develop/ui/compose/state) / [ViewModel & StateFlow](https://developer.android.com/topic/libraries/architecture/viewmodel)
+
+### 🛠️ Technical Implementation
+* **Derived State Optimization:** Implemented automatic calculations using `get()` properties in `UiState` classes. This removed the need for manual math inside ViewModel functions, ensuring a single source of truth for computed values (e.g., `totalPrice`, `statusMessage`).
+* **Progression Systems:** Developed level-based logic using Kotlin collection functions like `.findLast`. Applied this to map user progress (XP/Clicks) against a list of thresholds to trigger automatic rank or item updates.
+* **Codelab Refactoring:** Reconstructed the "Dessert Clicker" app by migrating legacy inline state into a dedicated `ViewModel` and `UiState` structure.
+* **Architectural Hardening (Library Case):** * Implemented **Conditional Guarding** in the `update` block to prevent invalid state transitions (e.g., borrowing beyond membership limits).
+    * Utilized `coerceAtLeast(0)` for boundary handling in state decrements.
+    * Shifted data initialization to the ViewModel `init` block to ensure loose coupling between the `UiState` and `DataSource`.
+    
+### 🧠 Key Takeaways
+* **Dumb UI Pattern:** Confirmed that a robust architecture keeps Composables "logic-free." The UI should only know how to display what is in the `UiState` and notify the ViewModel of user actions.
+* **State Encapsulation:** naming conventions matter—State variables should describe the "What" (e.g., `uiState`), not the "Where" (e.g., `viewModel`).
+* **Testable Architecture:** Separation of concerns (Logic vs. UI) is what makes Unit Testing possible. Testing the "brain" without the "face" (UI) makes for faster, more reliable builds.
+
+### 📈 Progress Tracking
+* **Time Invested:** 5 hours
+* **Phase:** 1 (Kotlin Fundamentals & Android Basics)
+* **Goal Alignment:** Practised 5 different ViewModel implementations including the codelabs Dessert Clicker.
