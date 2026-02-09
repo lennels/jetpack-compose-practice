@@ -272,13 +272,13 @@
 **Kotlin Resource:** [State in Jetpack Compose](https://developer.android.com/develop/ui/compose/state) / [ViewModel & StateFlow](https://developer.android.com/topic/libraries/architecture/viewmodel)
 
 ### 🛠️ Technical Implementation
-* **Derived State Optimization:** Mastered the use of `get()` properties in `UiState` for automatic calculations (`subtotal`, `tax`, `currentPowerUsage`). This ensures the UI never performs manual math and relies on a "Single Source of Truth."
+* **Derived State Optimization:** Mastered the use of `get()` properties in `UiState` for automatic calculations (`subtotal`, `tax`, `currentPowerUsage`, `totalProfitLoss`). This ensures the UI never performs manual math and relies on a "Single Source of Truth."
 * **Immutable List Manipulation:** * Implemented item updates using `.map { if (match) copy() else it }` to ensure thread-safe state transitions and trigger Recomposition.
     * Utilized `.filter { }` for dynamic item removal while maintaining state immutability.
 * **Architectural Hardening:**
     * **Conditional Guarding:** Implemented logic gates to block actions (e.g., Power Budgeting in Smart Home) before state updates occur.
     * **Qualified Returns:** Utilized `return@update` for early-exit logic to handle null safety and invalid user actions gracefully.
-    * **Bulk Updates:** Developed functions to update multiple objects simultaneously (e.g., `turnOffAll(type)`) without losing the rest of the list data.
+    * **Bulk & Multi-Property Updates:** Developed functions to update multiple objects or multiple properties within an object (e.g., `splitStock` logic halving price while doubling shares) without losing data integrity.
 
 ### 🧠 Key Takeaways
 * **The "Copy" Rule:** Solidified the understanding that modifying an object's property directly (mutation) will not trigger a UI refresh. Replacing the entire state object via `copy()` is mandatory for Compose.
@@ -286,12 +286,13 @@
 * **Logic vs. Side Effects:** Learned to handle state changes by calculating the *next* possible state rather than modifying the current one, a core principle for high-reliability apps like Google Wallet.
 
 ### 📈 Progress Tracking
-* **Time Invested:** 7.5 hours
+* **Time Invested:** 8 hours
 * **Phase:** 1 (Kotlin Fundamentals & Android Basics)
-* **Goal Alignment:** Completed **6 distinct ViewModel implementations**:
+* **Goal Alignment:** Completed **7 distinct ViewModel implementations**:
     1. *Dessert Clicker* (State Migration/Refactoring)
     2. *Laundry Timer* (Simple Counters)
     3. *Gym Leveler* (Threshold & Rank Logic)
     4. *Library Portal* (Conditional Guards)
     5. *Coffee Shop POS* (Complex List Manipulation)
     6. *Smart Home Manager* (Bulk Updates & Power Budgeting)
+    7. *Stock Portfolio Tracker* (Multi-Property Updates & Financial Logic)
