@@ -10,57 +10,110 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="098cb9ee-f50a-43ad-aa80-aa42f80cfe22" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/AndroidProjectSystem.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/deploymentTargetSelector.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/migrations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle.kts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/proguard-rules.pro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/androidTest/java/com/example/makansplitter/ExampleInstrumentedTest.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/makansplitter/MainActivity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/makansplitter/data/MakanItem.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/makansplitter/data/MakanItemSource.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/makansplitter/ui/theme/Color.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/makansplitter/ui/theme/Theme.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/makansplitter/ui/theme/Type.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher_foreground.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/themes.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/xml/backup_rules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/xml/data_extraction_rules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/example/makansplitter/ExampleUnitTest.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/libs.versions.toml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LionCityWallet/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LionCityWallet/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LionCityWallet/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LionCityWallet/.idea/AndroidProjectSystem.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LionCityWallet/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LionCityWallet/.idea/deploymentTargetSelector.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LionCityWallet/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LionCityWallet/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LionCityWallet/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LionCityWallet/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LionCityWallet/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LionCityWallet/app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LionCityWallet/app/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LionCityWallet/app/proguard-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LionCityWallet/app/src/androidTest/java/com/example/lioncitywallet/ExampleInstrumentedTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LionCityWallet/app/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LionCityWallet/app/src/main/java/com/example/lioncitywallet/MainActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LionCityWallet/app/src/main/java/com/example/lioncitywallet/data/PaymentCard.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LionCityWallet/app/src/main/java/com/example/lioncitywallet/data/Transaction.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LionCityWallet/app/src/main/java/com/example/lioncitywallet/data/WalletDataSource.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LionCityWallet/app/src/main/java/com/example/lioncitywallet/ui/Color.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LionCityWallet/app/src/main/java/com/example/lioncitywallet/ui/Theme.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LionCityWallet/app/src/main/java/com/example/lioncitywallet/ui/Type.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LionCityWallet/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LionCityWallet/app/src/main/res/drawable/ic_launcher_foreground.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LionCityWallet/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LionCityWallet/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LionCityWallet/app/src/main/res/mipmap-hdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LionCityWallet/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LionCityWallet/app/src/main/res/mipmap-mdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LionCityWallet/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LionCityWallet/app/src/main/res/mipmap-xhdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LionCityWallet/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LionCityWallet/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LionCityWallet/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LionCityWallet/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LionCityWallet/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LionCityWallet/app/src/main/res/values/colors.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LionCityWallet/app/src/main/res/values/font_certs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LionCityWallet/app/src/main/res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LionCityWallet/app/src/main/res/values/themes.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LionCityWallet/app/src/main/res/xml/backup_rules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LionCityWallet/app/src/main/res/xml/data_extraction_rules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LionCityWallet/app/src/test/java/com/example/lioncitywallet/ExampleUnitTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LionCityWallet/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LionCityWallet/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LionCityWallet/gradle/libs.versions.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LionCityWallet/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LionCityWallet/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LionCityWallet/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LionCityWallet/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LionCityWallet/settings.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MakanSplitter/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MakanSplitter/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MakanSplitter/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MakanSplitter/.idea/AndroidProjectSystem.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MakanSplitter/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MakanSplitter/.idea/deploymentTargetSelector.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MakanSplitter/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MakanSplitter/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MakanSplitter/.idea/migrations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MakanSplitter/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MakanSplitter/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MakanSplitter/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MakanSplitter/app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MakanSplitter/app/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MakanSplitter/app/proguard-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MakanSplitter/app/src/androidTest/java/com/example/makansplitter/ExampleInstrumentedTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MakanSplitter/app/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MakanSplitter/app/src/main/java/com/example/makansplitter/MainActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MakanSplitter/app/src/main/java/com/example/makansplitter/data/MakanItem.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MakanSplitter/app/src/main/java/com/example/makansplitter/data/MakanItemSource.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MakanSplitter/app/src/main/java/com/example/makansplitter/ui/theme/Color.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MakanSplitter/app/src/main/java/com/example/makansplitter/ui/theme/Theme.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MakanSplitter/app/src/main/java/com/example/makansplitter/ui/theme/Type.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MakanSplitter/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MakanSplitter/app/src/main/res/drawable/ic_launcher_foreground.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MakanSplitter/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MakanSplitter/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MakanSplitter/app/src/main/res/mipmap-hdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MakanSplitter/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MakanSplitter/app/src/main/res/mipmap-mdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MakanSplitter/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MakanSplitter/app/src/main/res/mipmap-xhdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MakanSplitter/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MakanSplitter/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MakanSplitter/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MakanSplitter/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MakanSplitter/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MakanSplitter/app/src/main/res/values/colors.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MakanSplitter/app/src/main/res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MakanSplitter/app/src/main/res/values/themes.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MakanSplitter/app/src/main/res/xml/backup_rules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MakanSplitter/app/src/main/res/xml/data_extraction_rules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MakanSplitter/app/src/test/java/com/example/makansplitter/ExampleUnitTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MakanSplitter/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MakanSplitter/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MakanSplitter/gradle/libs.versions.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MakanSplitter/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MakanSplitter/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MakanSplitter/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MakanSplitter/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MakanSplitter/settings.gradle.kts" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +123,7 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[LocalEmulator::path=C:\Users\USER\.android\avd\Medium_Phone.avd]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -79,6 +132,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Glaheu"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Glaheu/jetpack-compose-practice.git",
+    "accountId": "fee556ff-2317-4d09-9bc0-3b39939d66ac"
+  }
+}]]></component>
   <component name="GradleScriptDefinitionsStorage" workingDir="$PROJECT_DIR$" gradleHome="C:\Users\USER\.gradle\wrapper\dists\gradle-9.1.0-bin\9agqghryom9wkf8r80qlhnts3\gradle-9.1.0" javaHome="C:\Program Files\Android\Android Studio\jbr" gradleVersion="9.1.0">
     <option name="jvmArguments">
       <list>
@@ -105,9 +170,11 @@
     "RunOnceActivity.readMode.enableVisualFormatting": "true",
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
+    "dart.analysis.tool.window.visible": "false",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/USER/AndroidStudioProjects/mini projects"
+    "last_opened_file_path": "C:/Users/User/AndroidStudioProjects/exercises",
+    "show.migrate.to.gradle.popup": "false"
   }
 }]]></component>
   <component name="RunManager">
