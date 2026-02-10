@@ -3,7 +3,7 @@
 **Resources:** [Typealias: Variables](https://typealias.com/start/kotlin-variables-expressions-types/), [Functions](https://typealias.com/start/kotlin-functions/), [Conditionals](https://typealias.com/start/kotlin-conditionals/)
 
 ### 🛠️ Technical Implementation
-* **Variable Declarations:** Mastered the distinction between `val` (read-only/immutable) and `var` (mutable), focusing on when to use each for memory safety.
+* **Variable Declarations:** Learnt the distinction between `val` (read-only/immutable) and `var` (mutable), focusing on when to use each for memory safety.
 * **Expression-Oriented Programming:** Explored how Kotlin treats `if` and `when` as expressions that return values, reducing boilerplate compared to Java.
 * **Function Signatures:** Practiced declaring functions with parameters, return types, and default arguments to write reusable code blocks.
 * **Control Flow:** Implemented complex logic using `when` blocks as a more powerful, readable alternative to `switch` statements.
@@ -58,7 +58,7 @@
 ### 📈 Progress Tracking
 * **Time Invested:** 6 hours
 * **Phase:** 1 (Kotlin Advanced)
-* **Goal Alignment:** Mastering data manipulation, crucial for the "Google Wallet" scale of data handling.
+* **Goal Alignment:** Learning data manipulation.
 
 ---
 
@@ -102,7 +102,7 @@
 ### 📈 Progress Tracking
 * **Time Invested:** 6 hours
 * **Phase:** 1 (Architecture Foundations)
-* **Goal Alignment:** Deepening knowledge of state—the most critical part of complex apps like Google Wallet.
+* **Goal Alignment:** Deepening knowledge of states.
 
 ---
 
@@ -112,13 +112,13 @@
 **Resources:** [Kotlin Data Classes](https://kotlinlang.org/docs/data-classes.html), [Compose State & Hoisting](https://developer.android.com/codelabs/basic-android-kotlin-compose-using-state)
 
 ### 🛠️ Technical Implementation
-* **Immutable Data Modeling:** Mastered the use of `data class` and the `.copy()` function. Practiced updating state by creating new instances rather than mutating existing ones.
+* **Immutable Data Modeling:** Learnt the use of `data class` and the `.copy()` function. Practiced updating state by creating new instances rather than mutating existing ones.
 * **Functional Collection Pipelines:** Chained operators like `.filter`, `.map`, and `.forEach`. Solved a "Type Trap" bug where I attempted to access properties after a type transformation in the pipeline.
 * **Advanced Compose Components:** Integrated `TextField` for user input and `Switch` for toggling logic, linking them to reactive state.
 * **State Hoisting & Architecture:** Refactored composables to be "stateless" by extracting state to a parent level. Implemented the "State Down, Events Up" pattern.
 
 ### 🧠 Key Takeaways
-* **The Lead Mindset (Immutability):** Using `.copy()` is a safety requirement for financial apps like Google Wallet; it prevents race conditions and ensures the UI and Logic are never out of sync.
+* **The Lead Mindset (Immutability):** Using `.copy()` is a safety requirement; it prevents race conditions and ensures the UI and Logic are never out of sync.
 * **Unidirectional Data Flow (UDF):** Understood that UDF makes the code more predictable. By keeping composables stateless, they become 100% reusable and significantly easier to unit test.
 * **Pipeline Awareness:** Realized the importance of tracking object types throughout a transformation stream to avoid runtime crashes.
 
@@ -140,7 +140,7 @@
 **Kotlin Resource:** [Abstract and Open Classes](https://typealias.com/start/kotlin-abstract-and-open-classes/)
 
 ### 🛠️ Technical Implementation
-* **Lazy Layouts:** Mastered both `LazyColumn` (for the Affirmations app) and `LazyVerticalGrid` (for the Courses app).
+* **Lazy Layouts:** Learnt both `LazyColumn` (for the Affirmations app) and `LazyVerticalGrid` (for the Courses app).
 * **Data Class Construction:** Defined a `Topic` data class to handle multi-type data (String Resource ID, Int for course count, and Drawable Resource ID).
 * **LazyVerticalGrid:** Implemented a responsive grid using `GridCells.Fixed(2)` to display content in a dual-column format.
 * **Composable Composition:** Combined `Card`, `Row`, and `Column` to align the topic image with its metadata.
@@ -195,7 +195,7 @@
 
 ### 🛠️ Technical Implementation
 * **State Hoisting & Callbacks:** Implemented state hoisting in "Makan Splitter" by moving `orderList` to the top-level Composable and passing lambda functions (`onIncrement`, `onDecrement`) down to child components.
-* **Immutable State Updates:** Mastered the pattern of updating lists in Compose using `.map { ... }` combined with the `.copy()` function to create new object instances, ensuring the UI recomposes correctly.
+* **Immutable State Updates:** Learnt the pattern of updating lists in Compose using `.map { ... }` combined with the `.copy()` function to create new object instances, ensuring the UI recomposes correctly.
 * **Filtering Logic:** Built a dynamic filtering system for "Lion City Wallet" where selecting a card type updates the `LazyColumn` to show only relevant transactions or returns to a full list view.
 * **Destructuring in Loops:** Utilized destructuring declarations within `items` blocks (e.g., `val (merchant, amount, category, card) = transaction`) to keep Composable code clean and readable.
 * **Material 3 Navigation & Layouts:**
@@ -230,7 +230,7 @@
 ### 🧠 Key Takeaways
 * **Sealed Classes/Interfaces:** Learned that sealed types represent restricted class hierarchies. Unlike Enums, subclasses can hold unique state, making them perfect for representing UI states like `Success(data)` or `Error(message)`.
 * **Activity Lifecycle:** Studied the sequence of `onCreate`, `onStart`, `onResume`, `onPause`, `onStop`, and `onDestroy`. Essential for understanding how the OS handles process death and configuration changes.
-* **UI Flexibility:** Mastered the use of `Shape` and `Background` modifiers to create a "Bottom Sheet" feel for the summary section, aligning with modern Fintech UI patterns.
+* **UI Flexibility:** Learnt the use of `Shape` and `Background` modifiers to create a "Bottom Sheet" feel for the summary section, aligning with modern Fintech UI patterns.
 
 ### 📈 Progress Tracking
 * **Time Invested:** 4 hours
@@ -272,7 +272,7 @@
 **Kotlin Resource:** [State in Jetpack Compose](https://developer.android.com/develop/ui/compose/state) / [ViewModel & StateFlow](https://developer.android.com/topic/libraries/architecture/viewmodel)
 
 ### 🛠️ Technical Implementation
-* **Derived State Optimization:** Mastered the use of `get()` properties in `UiState` for automatic calculations (`subtotal`, `tax`, `currentPowerUsage`, `totalProfitLoss`). This ensures the UI never performs manual math and relies on a "Single Source of Truth."
+* **Derived State Optimization:** Learnt the use of `get()` properties in `UiState` for automatic calculations (`subtotal`, `tax`, `currentPowerUsage`, `totalProfitLoss`). This ensures the UI never performs manual math and relies on a "Single Source of Truth."
 * **Immutable List Manipulation:** * Implemented item updates using `.map { if (match) copy() else it }` to ensure thread-safe state transitions and trigger Recomposition.
     * Utilized `.filter { }` for dynamic item removal while maintaining state immutability.
 * **Architectural Hardening:**
@@ -283,7 +283,7 @@
 ### 🧠 Key Takeaways
 * **The "Copy" Rule:** Solidified the understanding that modifying an object's property directly (mutation) will not trigger a UI refresh. Replacing the entire state object via `copy()` is mandatory for Compose.
 * **Functional Programming:** Shifted from manual iteration to functional operators like `.any`, `.sumOf`, `.count`, and `.find` for cleaner, self-documenting code.
-* **Logic vs. Side Effects:** Learned to handle state changes by calculating the *next* possible state rather than modifying the current one, a core principle for high-reliability apps like Google Wallet.
+* **Logic vs. Side Effects:** Learned to handle state changes by calculating the *next* possible state rather than modifying the current one, a core principle for high-reliability apps.
 
 ### 📈 Progress Tracking
 * **Time Invested:** 8 hours
@@ -296,3 +296,35 @@
     5. *Coffee Shop POS* (Complex List Manipulation)
     6. *Smart Home Manager* (Bulk Updates & Power Budgeting)
     7. *Stock Portfolio Tracker* (Multi-Property Updates & Financial Logic)
+
+    ---
+    
+## [2026-02-10] Day 13: Type-Safe Navigation & Shared ViewModel Scoping
+
+**Pathway:** Android Basics in Compose - Unit 4 (Navigation) / Modern Android Development (MAD)
+**Kotlin Resource:** [Navigation with Compose](https://developer.android.com/develop/ui/compose/navigation) / [Type-Safe Navigation Guide](https://developer.android.com/guide/navigation/design/type-safety)
+
+### 🛠️ Technical Implementation
+* **Type-Safe Route Architecture:** * Pivoted from legacy String-based routing to **Kotlin Serialization**.
+    * Defined routes using `@Serializable` objects for static screens (`PassList`) and `data class` for parameterized destinations (`PassDetails`).
+* **Navigation Backstack Management:**
+    * Learnt the use of `backStackEntry.toRoute<T>()` to unpack complex arguments without manual key-string mapping.
+    * Implemented standard back-navigation using `navController.popBackStack()` to maintain a clean history.
+* **Shared ViewModel Pattern:**
+    * Scoped a single `PassViewModel` instance to the `NavHost` level, allowing seamless state sharing between the Wallet List and the Detail View.
+    * Ensured that data modifications (e.g., "Top Up" actions) on a detail screen are immediately reflected in the parent list without result-passing boilerplate.
+* **UI Resilience & Debugging:**
+    * **Namespace Collision Handling:** Resolved conflicts between Route classes and Composable functions by adopting the `...Screen` suffix convention.
+    * **Null-Safety Guarding:** Implemented early-exit checks for `.find` operations to handle edge cases where a navigation ID might not match the current state.
+    * **Modifier Scoping:** Fixed layout "jank" caused by incorrect modifier inheritance (chaining `fillMaxSize` in nested children).
+
+### 🧠 Key Takeaways
+* **Compile-Time Safety:** Realized that Type-Safe navigation catches errors (like missing parameters) at build time, preventing the runtime crashes common in older "String-template" navigation styles.
+* **Identity Separation:** Learned that the Navigation "Ticket" (the Route class) is separate from the "Destination" (the Screen Composable).
+* **State Synchronization:** Solidified the understanding of a **Single Source of Truth**; when screens share a ViewModel, navigation becomes a simple lens into the same underlying data.
+
+### 📈 Progress Tracking
+* **Time Invested:** 5 hours
+* **Phase:** 2 (Android Basics with Compose & Architecture)
+* **Goal Alignment:** * Completed **Campus Pass Manager**
+    * Successfully migrated from the official "Cupcake" tutorial logic to the 2026 industry-standard Type-Safe approach.
