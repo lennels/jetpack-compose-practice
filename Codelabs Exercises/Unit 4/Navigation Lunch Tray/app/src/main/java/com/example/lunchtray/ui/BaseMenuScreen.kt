@@ -54,7 +54,9 @@ fun BaseMenuScreen(
     var selectedItemName by rememberSaveable { mutableStateOf("") }
 
     Column(modifier = modifier) {
-        Column(modifier = Modifier.weight(1f).verticalScroll(rememberScrollState())) {
+        Column(modifier = Modifier
+            .weight(1f)
+            .verticalScroll(rememberScrollState())) {
             options.forEach { item ->
                 val onClick = {
                     selectedItemName = item.name
@@ -135,7 +137,7 @@ fun MenuScreenButtonGroup(
     Row(
         modifier = modifier,
         horizontalArrangement = Arrangement.spacedBy(dimensionResource(R.dimen.padding_medium))
-    ){
+    ) {
         OutlinedButton(modifier = Modifier.weight(1f), onClick = onCancelButtonClicked) {
             Text(stringResource(R.string.cancel).uppercase())
         }

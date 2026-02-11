@@ -53,32 +53,41 @@ import kotlinx.serialization.Serializable
 
 // TODO: Screen enum
 
-@Serializable
-object Start
-
-@Serializable
-object EntreeMenu
-
-@Serializable
-object SideDishMenu
-
-@Serializable
-object AccompanimentMenu
-
-@Serializable
-object Checkout
-
-enum class LunchTrayScreen(@StringRes val title: Int) {
-    Start(title = R.string.app_name),
-    Entree(title = R.string.choose_entree),
-    SideDish(title = R.string.choose_side_dish),
-    Accompaniment(title = R.string.choose_accompaniment),
-    Checkout(title = R.string.order_summary)
+interface LunchTrayDestination {
+    @get:StringRes
+    val titleRes: Int
 }
+
+
+@Serializable
+data object Start : LunchTrayDestination {
+    override val titleRes: Int = R.string.app_name
+}
+
+@Serializable
+object EntreeMenu : LunchTrayDestination {
+    override val titleRes: Int = R.string.choose_entree
+}
+
+@Serializable
+object SideDishMenu : LunchTrayDestination {
+    override val titleRes: Int = R.string.choose_side_dish
+}
+
+@Serializable
+object AccompanimentMenu : LunchTrayDestination {
+    override val titleRes: Int = R.string.choose_accompaniment
+}
+
+@Serializable
+object Checkout : LunchTrayDestination {
+    override val titleRes: Int = R.string.order_checkout
+}
+
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun topAppBar(
+fun TopAppBar(
     @StringRes currentScreenTitle: Int,
     canNavigateUp: Boolean,
     navigateUp: () -> Unit,
@@ -108,19 +117,19 @@ fun LunchTrayApp(
 
     val backStackEntry by navController.currentBackStackEntryAsState()
     val currentScreen = when (backStackEntry?.destination?.route) {
-        Start::class.qualifiedName -> LunchTrayScreen.Start
-        EntreeMenu::class.qualifiedName -> LunchTrayScreen.Entree
-        SideDishMenu::class.qualifiedName -> LunchTrayScreen.SideDish
-        AccompanimentMenu::class.qualifiedName -> LunchTrayScreen.Accompaniment
-        Checkout::class.qualifiedName -> LunchTrayScreen.Checkout
-        else -> LunchTrayScreen.Start
+        Start::class.qualifiedName -> Start.titleRes
+        EntreeMenu::class.qualifiedName -> EntreeMenu.titleRes
+        SideDishMenu::class.qualifiedName -> SideDishMenu.titleRes
+        AccompanimentMenu::class.qualifiedName -> AccompanimentMenu.titleRes
+        Checkout::class.qualifiedName -> Checkout.titleRes
+        else -> Start.titleRes
     }
     // Create ViewModel
     val viewModel: OrderViewModel = viewModel()
     Scaffold(
         topBar = {
-            topAppBar(
-                currentScreenTitle = currentScreen.title,
+            TopAppBar(
+                currentScreenTitle = currentScreen,
                 canNavigateUp = navController.previousBackStackEntry != null,
                 navigateUp = { navController.popBackStack() }
             )
@@ -134,8 +143,8 @@ fun LunchTrayApp(
             modifier = Modifier
                 .fillMaxSize()
                 .padding(
-                innerPadding
-            )
+                    innerPadding
+                )
         ) {
             composable<Start> {
                 StartOrderScreen(
