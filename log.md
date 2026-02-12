@@ -350,6 +350,7 @@
     * Refactored `TransactionCard` to use `Modifier.weight()` for text wrapping, ensuring long transaction names do not push prices off-screen.
 
 ### 🧠 Key Takeaways
+* **Function References (::):** Realized that using function references (e.g., `viewModel::amountTextbox`) is much cleaner than explicit lambdas; it removes the need to manually pass "it" and improves code readability.
 * **String-to-Double Paradox:** Discovered that UI state for numeric inputs should remain as `Strings` to preserve "incomplete" states (like trailing decimal points), converting to numeric types only for business logic.
 * **Scaffold Padding Chain:** Learned that the `innerPadding` provided by the `Scaffold` is a "contract" that must be passed all the way down to the screen-level Composables to maintain UI visibility.
 * **Arrangement vs. Alignment:** Clarified the use of `Arrangement.spacedBy()` for consistent gaps and `Alignment.CenterVertically` for group positioning within containers.
@@ -357,4 +358,5 @@
 ### 📈 Progress Tracking
 * **Time Invested:** 5 hours
 * **Phase:** 2 (Android Basics with Compose & Architecture)
-* **Goal Alignment:** * Successfully developed the core UI and navigation for the **Expense Tracker** practise project.
+* **Goal Alignment:** * Successfully developed the core UI and navigation for the **Expense Tracker** practice project.
+    * Mastered clean code practices by utilizing function references over redundant lambda declarations.
