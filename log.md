@@ -359,4 +359,31 @@
 * **Time Invested:** 5 hours
 * **Phase:** 2 (Android Basics with Compose & Architecture)
 * **Goal Alignment:** * Successfully developed the core UI and navigation for the **Expense Tracker** practice project.
-    * Mastered clean code practices by utilizing function references over redundant lambda declarations.
+
+---
+
+## [2026-02-12] Day 15: Navigation Architecture & Modern Date Handling
+
+**Pathway:** Android Basics in Compose - Unit 4 (Practice Project Wrap-up)
+**Codelab:** [Navigation and State Management Integration](https://developer.android.com/guide/navigation/design/type-safety)
+
+### 🛠️ Technical Implementation
+* **Modern Date Persistence:**
+    * Shifted from legacy `java.util.Date` to **`java.time.LocalDate`** and **`Instant`**, utilizing **API Desugaring** to ensure compatibility with `minSdk 24`.
+    * Implemented **Epoch Days (`Long`)** as the primary storage format for dates, optimizing memory efficiency and simplifying database sorting for future Room integration.
+* **UDF Navigation Events:**
+    * Engineered an **Event-based Navigation** pattern using a `LaunchedEffect` to observe a success flag (`onSuccessSubmission`) in the UI state. 
+    * This decoupled the ViewModel from the `navController`, ensuring that navigation back to the Dashboard occurs only after successful business logic execution.
+* **TopAppBar & Backstack Integration:**
+    * Dynamically controlled the visibility of the "Back" arrow by observing `navController.currentBackStackEntryAsState()` within the Scaffold.
+* **Atomic State Management:**
+    * Resolved a "State Mutation Trap" by ensuring all validation errors and success flags are updated in a single `.update { ... }` block, preventing UI flickering and lost updates.
+
+### 🧠 Key Takeaways
+* **The Date Paradox:** Confirmed that `Long` (Epoch) is the "Source of Truth" for storage, while `LocalDate` is used for logic and `String` for the UI.
+* **State Chaining:** Realized that `it.copy()` calls must be chained or handled collectively; independent copies within a single function result in only the last copy being preserved.
+
+### 📈 Progress Tracking
+* **Time Invested:** 3 hours
+* **Phase:** 2 (Android Basics with Compose & Architecture)
+* **Goal Alignment:** * Finished my mini **Expense Tracker** practice project.
