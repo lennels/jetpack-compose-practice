@@ -30,22 +30,31 @@ fun ReplyApp(
     windowSize: WindowWidthSizeClass,
     modifier: Modifier = Modifier,
 ) {
+    val navigationType: ReplyNavigationType
+    val contentType: ReplyContentType
     val viewModel: ReplyViewModel = viewModel()
     val replyUiState = viewModel.uiState.collectAsState().value
-    val navigationType: ReplyNavigationType = when (windowSize) {
-        WindowWidthSizeClass.Compact -> ReplyNavigationType.BOTTOM_NAVIGATION
-        WindowWidthSizeClass.Medium -> ReplyNavigationType.NAVIGATION_RAIL
-        WindowWidthSizeClass.Expanded -> ReplyNavigationType.PERMANENT_NAVIGATION_DRAWER
-        else -> ReplyNavigationType.BOTTOM_NAVIGATION
-    }
-    val contentType: ReplyContentType = when (windowSize) {
-        WindowWidthSizeClass.Compact -> ReplyContentType.LIST_ONLY
-        WindowWidthSizeClass.Medium -> ReplyContentType.LIST_ONLY
-        WindowWidthSizeClass.Expanded -> ReplyContentType.LIST_AND_DETAIL
-        else -> ReplyContentType.LIST_ONLY
+
+    when (windowSize) {
+        WindowWidthSizeClass.Compact -> {
+            navigationType = ReplyNavigationType.BOTTOM_NAVIGATION
+            contentType = ReplyContentType.LIST_ONLY
+        }
+        WindowWidthSizeClass.Medium -> {
+            navigationType = ReplyNavigationType.NAVIGATION_RAIL
+            contentType = ReplyContentType.LIST_ONLY
+        }
+        WindowWidthSizeClass.Expanded -> {
+            navigationType = ReplyNavigationType.PERMANENT_NAVIGATION_DRAWER
+            contentType = ReplyContentType.LIST_AND_DETAIL
+        }
+        else -> {
+            navigationType = ReplyNavigationType.BOTTOM_NAVIGATION
+            contentType = ReplyContentType.LIST_ONLY
+        }
     }
     ReplyHomeScreen(
-        replyNavigationType = navigationType,
+        navigationType = navigationType,
         contentType = contentType,
         replyUiState = replyUiState,
         onTabPressed = { mailboxType: MailboxType ->
