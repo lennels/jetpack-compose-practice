@@ -387,3 +387,29 @@
 * **Time Invested:** 3 hours
 * **Phase:** 2 (Android Basics with Compose & Architecture)
 * **Goal Alignment:** * Finished my mini **Expense Tracker** practice project.
+
+---
+
+## [2026-02-16] Day 19: Adaptive Layouts & Window Size Classes
+
+**Pathway:** Android Basics in Compose - Unit 4 (Adaptive Layouts)
+**Codelab:** [Build an adaptive app with Jetpack Compose](https://developer.android.com/codelabs/jetpack-compose-adaptive-layouts)
+
+### 🛠️ Technical Implementation
+* **Dynamic Navigation Switching:**
+    * Engineered a responsive UI that swaps between `NavigationBar` (Bottom Nav), `NavigationRail`, and `PermanentNavigationDrawer` based on the current **WindowSizeClass**.
+* **Screen Segmentation Logic:**
+    * **Compact (Phone):** Implemented `NavigationBar` for optimal thumb-reach on mobile.
+    * **Medium (Foldables):** Integrated `NavigationRail` to maximize vertical space.
+    * **Expanded (Tablets):** Deployed `PermanentNavigationDrawer` for high-efficiency navigation on large screens.
+* **Canonical Layout Implementation:**
+    * Practiced the **List-Detail** pattern, ensuring the UI transitions from single-pane (Mobile) to dual-pane (Tablet) seamlessly without losing the user's scroll position or state.
+
+### 🧠 Key Takeaways
+* **WindowSizeClass > Display Metrics:** Confirmed that designing for breakpoints (Compact, Medium, Expanded) is the industry standard over targeting specific device models or pixel counts.
+* **State Hoisting for UI Logic:** Realized that navigation state must be hoisted high enough in the Composable tree to allow the entire layout structure to swap types (Rail vs. Bottom Bar) during configuration changes.
+
+### 📈 Progress Tracking
+* **Time Invested:** 2 hour
+* **Phase:** 2 (Android Basics with Compose & Architecture)
+* **Goal Alignment:** Adapting to responsive design.
