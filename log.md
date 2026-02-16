@@ -390,7 +390,7 @@
 
 ---
 
-## [2026-02-16] Day 19: Adaptive Layouts & Window Size Classes
+## [2026-02-16] Day 16: Adaptive Layouts & Window Size Classes
 
 **Pathway:** Android Basics in Compose - Unit 4 (Adaptive Layouts)
 **Codelab:** [Build an adaptive app with Jetpack Compose](https://developer.android.com/codelabs/jetpack-compose-adaptive-layouts)
