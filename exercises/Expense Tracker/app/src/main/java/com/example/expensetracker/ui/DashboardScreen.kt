@@ -124,11 +124,11 @@ fun TrasactionCard(
 fun CategoryTab(
     category: Category,
     uiState: TransactionUiState,
-    filterCateogry: (Category) -> Unit,
+    filterCategory: (Category) -> Unit,
     modifier: Modifier = Modifier
 ) {
     FilterChip(
-        onClick = { filterCateogry(category) },
+        onClick = { filterCategory(category) },
         selected = uiState.selectedCategory.contains(category),
         label = {
             Text(text = category.name)
