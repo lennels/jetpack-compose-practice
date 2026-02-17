@@ -1,6 +1,9 @@
 package com.example.mallsapp.ui
 
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -35,7 +38,7 @@ fun MallApp(
 
         }
     ) { innerPadding ->
-
+        MallAppBar({}, true, windowSize, modifier = Modifier.padding(innerPadding))
     }
 }
 
@@ -77,7 +80,7 @@ fun MallList(
 ) {
     LazyColumn() {
         items(mall) {
-
+            MallItem(it, {})
         }
     }
 }
@@ -86,12 +89,26 @@ fun MallList(
 fun MallItem(
     mall: Mall,
     onItemClick: (Mall) -> Unit,
-    modifier: Modifier
+    modifier: Modifier = Modifier
 ) {
     Card(
         elevation = CardDefaults.cardElevation(),
         modifier = modifier,
     ) {
-        Image(painter = painterResource(mall.))
+        Row {
+            Image(
+                painter = painterResource(mall.imgRes),
+                contentDescription = null
+            )
+            Column {
+                Text(
+                    mall.name,
+                    fontWeight = FontWeight.Bold
+                )
+                Text(
+                    mall.region.toString()
+                )
+            }
+        }
     }
 }
