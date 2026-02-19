@@ -1,9 +1,13 @@
 package com.example.mallsapp.ui
 
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -24,21 +28,33 @@ import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.TopAppBarDefaults
+import androidx.compose.runtime.collectAsState
+import androidx.compose.runtime.getValue
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.mallsapp.model.Mall
 
 @Composable
 fun MallApp(
-    windowSize: WindowWidthSizeClass,
-    onBackPressed: () -> Unit,
+//    windowSize: WindowWidthSizeClass,
+//    onBackPressed: () -> Unit,
 ) {
+    val viewModel: MallViewModel = viewModel()
+    val mallUiState by viewModel.mallUiState.collectAsState()
     Scaffold(
         topBar = {
-
+//            MallAppBar({}, true, windowSize)
         }
     ) { innerPadding ->
-        MallAppBar({}, true, windowSize, modifier = Modifier.padding(innerPadding))
+        MallList(
+            mallUiState.mallList,
+            { viewModel.selectMall(it) },
+            modifier = Modifier.padding(innerPadding)
+        )
     }
 }
 
@@ -78,9 +94,9 @@ fun MallList(
     onClick: (Mall) -> Unit,
     modifier: Modifier = Modifier
 ) {
-    LazyColumn() {
+    LazyColumn(modifier = modifier) {
         items(mall) {
-            MallItem(it, {})
+            MallItem(it, onClick)
         }
     }
 }
@@ -93,14 +109,29 @@ fun MallItem(
 ) {
     Card(
         elevation = CardDefaults.cardElevation(),
-        modifier = modifier,
+        modifier = modifier
+            .fillMaxWidth()
+            .padding(10.dp),
     ) {
-        Row {
-            Image(
-                painter = painterResource(mall.imgRes),
-                contentDescription = null
-            )
-            Column {
+        Row(
+            verticalAlignment = Alignment.CenterVertically,
+            modifier = Modifier
+                .fillMaxWidth()
+        ) {
+            Box(
+                modifier = Modifier.size(100.dp)
+            ) {
+                Image(
+                    painter = painterResource(mall.imgRes),
+                    contentDescription = null,
+                    contentScale = ContentScale.Crop
+                )
+            }
+            Column(
+                modifier = Modifier
+                    .padding(start = 16.dp),
+                horizontalAlignment = Alignment.Start
+            ) {
                 Text(
                     mall.name,
                     fontWeight = FontWeight.Bold
@@ -111,4 +142,23 @@ fun MallItem(
             }
         }
     }
+}
+
+@Composable
+fun MallDetail(
+
+) {
+
+}
+
+@Preview(showBackground = true)
+@Composable
+fun MallAppPreview() {
+    MallApp()
+}
+
+@Preview(showBackground = true)
+@Composable
+fun MallDetailPreview() {
+    MallDetail()
 }
