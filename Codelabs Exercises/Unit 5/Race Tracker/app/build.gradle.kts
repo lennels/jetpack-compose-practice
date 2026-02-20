@@ -63,6 +63,7 @@ android {
 }
 
 dependencies {
+    testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.6.4")
     implementation(platform("androidx.compose:compose-bom:2024.12.01"))
     implementation("androidx.activity:activity-compose:1.9.3")
     implementation("androidx.compose.material:material-icons-extended")
@@ -83,4 +84,5 @@ dependencies {
 
     debugImplementation("androidx.compose.ui:ui-test-manifest")
     debugImplementation("androidx.compose.ui:ui-tooling")
+    testImplementation(kotlin("test"))
 }
